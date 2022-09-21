@@ -1,0 +1,19 @@
+{
+    "save_dir": "res/cluster_test",
+    "device": "cuda:0",
+    "epochs": 200,
+    "batch_size": 100,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.000,
+    "momentum": 0.9,
+    "pretrain": "C:/AEcode/res/erahist_lat60_200ep/epoch_200.ckpt", 
+	"prev": "C:/AEcode/res/nonorm_masklayer_12_50epv1/epoch_50.ckpt:, C:/AEcode/res/erahist_lat60_200ep/epoch_200.ckpt C:/AEcode/res/e_mask_14/epoch_30.ckpt, C:/AEcode/res/exp_lat50'/epoch_30.ckpt",
+
+    "use_masklayer": false,
+    "masklayer_code_sizes": [10,20,30,40,50],
+     "res":[1,2,3,4,5,6,7,8,9,[10, 20, 30, 40, 50]],
+    "test_use_masklayer": false,
+    "test_code_sizes": [50]
+
+}
