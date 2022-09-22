@@ -1,0 +1,19 @@
+{
+    "save_dir": "res/nonorm_masklayer_12_50epv1",
+    "device": "cuda:0",
+    "epochs": 50,
+    "batch_size": 100,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.000,
+    "momentum": 0.9,
+    "pretrain": false, 
+	"prev": "C:/AEcode/res/nonorm_masklayer_12_50ep/epoch_50.ckpt: nonorm_masklayer_1_30mslp_nonorm_lat30__v1,C:/AEcode/res/e_masksize_5/epoch_50.ckpt, C:/AEcode/res/e_mask_14/epoch_30.ckpt, C:/AEcode/res/exp_lat50'/epoch_30.ckpt",
+
+    "use_masklayer": true,
+    "masklayer_code_sizes": [1,2,3,4,5,6,7,8,9,10,20,30],
+     "res":[1,2,3,4,5,6,7,8,9,[10, 20, 30, 40, 50]],
+    "test_use_masklayer": true,
+    "test_code_sizes": [30]
+
+}
